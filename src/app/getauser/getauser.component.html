@@ -1,0 +1,35 @@
+
+<h1> Query A User</h1>
+<button pButton type="button"  routerLink="/" label="Home" icon="pi pi-check"  ></button>
+
+
+<br><br>
+<p-panel header="Search User By Id">
+    <h3>Id</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" [(ngModel)]="Id" pInputText required >
+    <label for="float-input">Id</label>
+</span>
+<p-footer>
+    <button pButton type="button" label="Search" icon="pi pi-check" style="margin-right: .25em" (click)="handleSearchId()"></button>
+</p-footer>
+</p-panel>
+  
+<br><br>
+<br><br>
+
+<p-panel header="Search User By Name">
+    <h3>First Name</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" [(ngModel)]="FirstName" pInputText required >
+    <label for="float-input">First Name</label>
+</span>
+<h3>Last Name</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" [(ngModel)]="LastName" pInputText required >
+    <label for="float-input">Last Name</label>
+</span>
+<p-footer>
+    <button pButton type="button" label="Search" icon="pi pi-check" style="margin-right: .25em" (click)="handleSearchName()"></button>
+</p-footer>
+</p-panel>

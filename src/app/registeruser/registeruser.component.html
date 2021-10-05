@@ -1,0 +1,41 @@
+<div>
+    <button pButton type="button"  routerLink="/" label="Home" icon="pi pi-check"  ></button>
+    </div>
+    <br>
+
+<p-panel header="Register A User">
+    <h3>First Name</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" [(ngModel)]="FirstName" size="30" pInputText required >
+    <label for="float-input">First Name</label>
+</span>
+<h3>Last Name</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" [(ngModel)]="LastName" size="30" pInputText required> 
+    <label for="float-input">Last Name</label>
+</span>
+<h3>Date Of Birth</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="DateOfBirth" pInputText required> 
+    <label for="float-input">Date Of Birth</label>
+</span>
+<h3 class="first">Place Of Birth</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="PlaceOfBirth" pInputText required> 
+    <label for="float-input">Place Of Birth</label>
+</span>
+<h3 class="first">Mobile Number</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="MobileNumber" pInputText required> 
+    <label for="float-input">Mobile Number</label>
+</span>
+<h3 class="first">Email Id</h3>
+<span class="ui-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="EmailId" pInputText required> 
+    <label for="float-input">Email Id</label>
+</span>
+<p-footer>
+    <button pButton type="button" label="Register" icon="pi pi-check" style="margin-right: .25em" (click)="handleRegister()"></button>
+    <button pButton type="button" label="Cancel" icon="pi pi-times" class="ui-button-secondary" routerLink="../"></button>
+</p-footer>
+  </p-panel>

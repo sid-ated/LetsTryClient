@@ -1,0 +1,18 @@
+<div>
+    <h1>Here are your query results</h1>
+    <button pButton type="button"  routerLink="/" label="Back" icon="pi pi-check"  ></button>
+</div>
+<br><br>
+<p-card *ngFor="let user of allUsers" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+    <div>Name: {{user.FirstName}} {{user.LastName}}</div>
+    <div>Date Of Birth: {{user.DateOfBirth}}</div>
+    <div>Place Of Birth: {{user.PlaceOfBirth}}</div>
+    <div>Mobile Number: {{user.MobileNumber}}</div>
+    <div>Email Id: {{user.EmailId}}</div>
+    <p-footer>
+        <button pButton type="button" label="Edit" icon="pi pi-check" style="margin-right: .25em" (click)="editUser()"></button>
+        <button pButton type="button" label="Delete" icon="pi pi-times" style="margin-right: .25em" (click)="deleteUser()"></button>
+        <button pButton type="button" label="Verify KYC" icon="pi pi-times" class="ui-button-tertiary" (click)="verifyKyc(user)"></button>
+    </p-footer>
+  </p-card>
+  
